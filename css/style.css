@@ -1,0 +1,457 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  font-family: "Playfair Display", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-size: 10px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* all the section tag in the project */
+section {
+  padding: 5rem 7%;
+}
+
+/* header start */
+
+.header {
+  width: 100%;
+  height: 50px;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  padding-right: 3.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #009e5f;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: rgb(19, 131, 94);
+}
+
+.header .logo {
+  position: relative;
+}
+
+.header .logo img {
+  width: 117px;
+  height: 105px;
+  position: absolute;
+  left: -55px;
+  top: -21px;
+}
+.header .navbar a {
+  font-size: 15px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bolder;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.header .navbar a:hover {
+  color: rgb(6, 70, 6);
+}
+/* header end */
+
+/* refreshing 7up start */
+
+.main-div {
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+  display: flex;
+}
+
+.main-div:hover {
+  cursor: pointer;
+}
+
+/* left part start */
+
+.left-part {
+  width: 30%;
+  height: 100%;
+  position: relative;
+  background-color: white;
+  /* align-items: center;
+    justify-content: center; */
+}
+
+.main-div .left-part .left-part-img img {
+  position: absolute;
+  width: 90%;
+  height: 55%;
+  left: 6%;
+  top: 13%;
+}
+
+.left-text-center {
+  position: absolute;
+  top: 77%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.left-text-center h2 {
+  font-size: 2.5rem;
+  color: #009e5f;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.explore {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  color: #009e5f;
+}
+
+.explore h3 {
+  margin: 5px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border: 3px solid #009e5f;
+  padding: 10px 20px;
+}
+
+.left-text-center .explore:hover {
+  cursor: pointer;
+}
+
+/* left part end */
+
+/* right part start*/
+
+.right-part {
+  background-color: rgb(136, 83, 14);
+  background-image: url(../images/7up_featured.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 70%;
+  height: 100%;
+  position: relative;
+  display: flex;
+}
+
+.right-part .right-part-img{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right-part .right-part-img img{
+  width: 30px;
+  height: 30px;
+
+}
+
+/* right part end */
+
+/* refreshing 7up end */
+
+
+/* simple 7up start */
+
+.simple_7up{
+  min-height: 100vh;
+  background-image: url(../images/7up-simple-banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.simple_7up .content{
+  width: 60rem;
+  /* position: relative; */
+}
+
+.simple_7up .content h1{
+  display: block;
+  /* position: absolute; */
+  margin-top: -32%;
+  padding-bottom: 1.7rem;
+  font-size: 5.6rem;
+  color: white;
+  font-weight: 800;
+}
+
+.simple_7up .content p{
+  color: white;
+  font-size: 3rem;
+  padding-bottom: 1.7rem;
+}
+.simple_7up .content a .content-explore{
+  height: 100%;
+  width: 220px;
+  background-color: white;
+  padding: 15px 5px;
+  text-align: center;
+  transition: width 0.5s;
+}
+.simple_7up .content a{
+  text-align: center;
+  /* padding: 2rem; */
+  font-size: 2.2rem;
+  color: #009e5f;
+  text-decoration: none;
+  background: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.simple_7up a .content-explore:hover{
+  background-color: #009e5f;
+  color: white;
+  height: 100%;
+  width: 220px;
+
+}
+
+.simple_7up .content-explore a:hover{
+  color: white;
+}
+
+/* simple 7up end */
+
+
+/* cocktail start */
+
+.cocktail{
+  background-image: url(../images/module_cocktail.jpg);
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.btntext-container{
+  height: 100%; width: 100%; display: flex; justify-content: center; align-items: center;
+}
+.btntext{
+  font-size:xx-large; padding: 20px 30px; background-color: #FE5887; color: white;
+  cursor: pointer;
+}
+.btntext:hover{
+  transform: scale(1.1);
+  transition-duration: 500ms;
+}
+/* cocktail end */
+
+
+/* cooking start */
+
+.cooking{
+  background-image: url(../images/module_cooking.jpg);
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* cooking end */
+
+
+/* see all start */
+
+.see-all{
+  background-image: url(../images/module_seeall.jpg);
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* see all end */
+
+
+/* drink it start */
+
+/* .drink-it{
+ display: grid;
+ grid-template-columns: 50% 50%;
+  background-color: aqua;
+  width: 100%;
+  height: 100%;
+}
+
+.drink-it .left{
+  width: 50vw;
+  height: 100%;
+  background-color: aquamarine;
+}
+
+.drink-it .right{
+  width: 50vw;
+  height: 100%;
+  background-color: orchid;
+} */
+.drink-it{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+}
+.right{
+  height: 100%;
+  width: 100%;
+  background-color: #ECECEC;
+  color: #818182;
+}
+.left{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#zero-sgr{
+  margin: 120px 0px 5px 80px;
+  display: flex;
+}
+#zero-sgr img{
+  height: fit-content;
+}
+#zero-sgr span h1{
+  font-size: 70px;
+  padding: 0 0 5px 20px;
+}
+#ratting{
+  padding: 10px 0 5px 20px;
+  font-size: larger;
+}
+#ratting a{
+  text-decoration: none;
+  color: #818182;
+  margin: 5px 5px;
+}
+#ratting .ri-star-fill{
+  color: #ffd900;
+  font-size: 20px;
+}
+#zero-desc{
+  margin: 50px 80px ;
+}
+#zero-desc h1{
+  font-size: 30px;
+}
+#zero-desc p{
+  font-size: 16px;
+  line-height: 2rem;
+}
+#btn-exp{
+  margin-left: 80px;
+  justify-content: flex-start;
+}
+
+/* left div start */
+.left{
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+.left div{
+  padding: 10px;
+}
+.left div .bottle{
+  height: 300px;
+  margin-top: 120px;
+  padding-left: 20px;
+}
+#mdl-img{
+  height: 400px;
+  padding: 0px;
+  margin-left: -13px;
+}
+#arrowimg{
+  width: 236px;
+  margin: 50px 0 0 -20px;
+}
+.shadow{
+  margin-top: 15px;
+  height: 50px;
+  width: 200px;
+}
+/* drink it end */
+
+/* footer start  */
+.footer{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-image: url(../images/footer-bg.jpg);
+  background-size: cover;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.footer .box{
+  width: 70vw;
+  height: 120px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, .75);
+}
+
+.footer .box .icons{
+  margin: 12px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer .box .icons a{
+  height: 3rem;
+  width: 2.5rem;
+  line-height: 4.5rem;
+  border-radius: 50%;
+  font-size: 2.6rem;
+  gap: 15px;
+  color: #636363;
+  margin-right: 0.3rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.footer .box .links{
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  gap: 15px;
+}
+
+.footer .box .links a{
+  text-decoration: none;
+  color: #636363;
+}
+.footer .box .links a:hover{
+  text-decoration: underline;
+}
+.copyright{
+  display: flex;
+  justify-content: center;
+  margin: 12px 0;
+  color: #636363;
+}
